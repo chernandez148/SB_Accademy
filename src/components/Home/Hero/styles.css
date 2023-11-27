@@ -1,0 +1,228 @@
+.Hero {
+    padding: 6rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clippers,
+.straightener {
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+}
+
+.dryer {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.clippers {
+    top: 0;
+    right: 0;
+}
+
+.straightener {
+    bottom: 0;
+    left: 0;
+}
+
+.hero-left {
+    color: white;
+    text-align: start;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.hero-left .circle {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    filter: opacity(0.1);
+}
+
+.hero-left h1 {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-left p {
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-left button {
+    background: #1CD8D2;
+    background: linear-gradient(to right, #93EDC7, #1CD8D2);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-right {
+    background-image: url("../../../assets/Wave-Grey.png");
+    background-size: cover;
+    position: relative;
+}
+
+.hero-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.hero-slider {
+    background: #1CD8D2;
+    background: linear-gradient(to right, #93EDC7, #1CD8D2);
+    padding: 10px;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+.hero-slider img {
+    border-radius: 50%;
+    filter: saturate(.5);
+    position: absolute;
+    transition: opacity .5s ease-in-out;
+}
+
+.hero-slider img:last-child {
+    position: relative;
+    width: 100%;
+}
+
+.enroll {
+    background: white;
+    padding: 1rem 2.5rem 1rem 1.5rem;
+    border-radius: 5px;
+    text-align: start;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.enroll h3 {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.enroll button {
+    margin-top: 0.5rem;
+    background: #1CD8D2;
+    background: linear-gradient(to right, #93EDC7, #1CD8D2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@media (min-width: 600px) {
+
+    .clippers,
+    .straightener {
+        width: 150px;
+    }
+
+    .circle {
+        width: 600px !important;
+        height: 600px !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .Hero {
+        flex-direction: row;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 50%;
+    }
+
+    .hero-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 1rem;
+    }
+
+    .hero-left h1 {
+        font-size: 55px;
+    }
+
+    .enroll {
+        position: relative;
+        bottom: 150px;
+        right: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+    .hero-right {
+        background-size: contain;
+        position: relative;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .clippers {
+        top: 200px;
+    }
+
+    .straightener {
+        bottom: 200px;
+    }
+
+
+    .dryer {
+        display: initial;
+    }
+
+    .hero-left h1 {
+        font-size: 60px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+    }
+
+    .hero-left {
+        padding: 0 0 0 8rem;
+    }
+}
