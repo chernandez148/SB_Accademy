@@ -1,5 +1,9 @@
 .Highlights {
     padding: 3rem 0;
+    background-image: url('../../../assets/Wave-Grey.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
 }
 
 .highlights-wrapper {
@@ -23,6 +27,8 @@
     text-align: start;
     transform: translateY(0);
     transition: all .5s ease-in-out;
+    box-shadow: 0 0 15px 0px #74e2cd;
+    border: 2px solid #74e2cd;
 }
 
 .highlights-wrapper div:hover {
@@ -53,9 +59,23 @@
     }
 
     .highlights-wrapper div {
-        width: calc(50% - 4rem);
+        width: calc(50% - 6rem);
         padding: 1rem;
         margin: 1rem;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .highlights-wrapper div {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .highlights-wrapper div {
+        height: 300px;
     }
 }
 
@@ -69,6 +89,7 @@
 
     .highlights-wrapper div {
         width: calc(100% - 4rem);
+        height: initial;
         padding: 1rem;
         margin: 1rem;
     }
