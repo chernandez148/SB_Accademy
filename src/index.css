@@ -22,3 +22,7 @@ p {
 button {
   border: 0;
 }
+
+.accent {
+  color: #26d9d2;
+}

@@ -54,10 +54,6 @@
     font-size: 14px;
 }
 
-.about-right .accent {
-    color: #26d9d2;
-}
-
 .about-left img {
     border-radius: 15px;
     filter: saturate(.5);
@@ -127,5 +123,33 @@
 @media (max-width: 500px) {
     .About {
         padding: 1rem 1rem 3rem 1rem;
+    }
+
+    .about-wrapper {
+        flex-direction: column-reverse;
+        background-position: 200px;
+    }
+
+    .about-right {
+        padding-bottom: 3rem;
+    }
+
+    .about-left {
+        padding-bottom: 0;
+    }
+
+    .about-right h4 {
+        margin: 0 0 1rem 0;
+    }
+
+    .About h1 {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .About h1 {
+        font-size: 26px;
     }
 }
