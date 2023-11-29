@@ -3,6 +3,7 @@ import barbering from "../../../assets/barbering.jpg";
 import barberingLogo from "../../../assets/barbering-logo.png";
 import Carousel from "../../../templates/Carousel/Carousel";
 import CarouselItem from "../../../templates/CarouselItem/CarouselItem";
+import stroke from "../../../assets/brush-stroke.png";
 import "./styles.css";
 
 function Courses() {
@@ -61,6 +62,7 @@ function Courses() {
     <div className="Courses">
       <div className="courses-wrapper">
         <h4>WHAT WE OFFER</h4>
+        <img className="stroke" src={stroke} alt="stroke" />
         <h1>
           Collaborate Directly with Renowned Experts <br />
           in the World of <span className="accent">Barbering</span> and{" "}

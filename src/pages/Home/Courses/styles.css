@@ -7,6 +7,10 @@
     background-position: left;
 }
 
+.courses-wrapper h4 {
+    margin: 0;
+}
+
 .razor {
     position: absolute;
     z-index: 1;

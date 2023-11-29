@@ -26,3 +26,9 @@ button {
 .accent {
   color: #26d9d2;
 }
+
+.stroke {
+  margin: 0.5em 0 1rem 0;
+  width: 100px;
+  transform: rotateY(180deg);
+}
